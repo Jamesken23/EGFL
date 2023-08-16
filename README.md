@@ -1,20 +1,20 @@
 # SGVD
-This repo is a paper of python implementation : **Utilizing bytecode-based multi-modality fusion framework to improve smart contract vulnerability detection.** 
+This repo is a paper on Python implementation: **Utilizing bytecode-based multi-modality fusion framework to improve smart contract vulnerability detection.** 
 
 Our main intuition is that the opcode (a sequence modality of bytecode) and control flow graph (a graph modality of bytecode) can complement each other in vulnerability detection in smart contracts. To fill the research gap, we propose the SGVD framework that extracts rich semantic information from the opcode and control flow graph, aiming to improve the performance of vulnerability detection.
 
 # Framework
 <div align=center>
-<img src="https://github.com/Jamesken23/SGVD/blob/main/figs/bytecode_opcode_cfg.tiff" width="800" height="200" alt="Figure 1"/><br/>
+<img src="figs/bytecode_opcode_CFG.png" width="800" height="200" alt="bytecode_opcode_CFG"/><br/>
 </div>
 
 <div align=center>
-<img src="https://github.com/Jamesken23/SGVD/blob/main/figs/SGVD.tiff" width="800" height="260" alt="Figure 2"/><br/>
+<img src="figs/SGVD.png" width="800" height="260" alt="SGVD"/><br/>
 </div>
 
-As shown in these figures, we provide an overview of the SGVD approach, which comprises the three stages:
+As shown in these figures, we provide an overview of the SGVD approach, which comprises three stages:
 
-  * **Data processing:** We collect the smart contract bytecode from the Ethereum platform. The automated tools are then applied to generate the opcode and CFG, respectively.
+  * **Data processing:** We collect the smart contract bytecode from the Ethereum platform. The automated tools are then applied to generate the opcode and CFG.
   
   * **Feature extraction:** We design the TextConformer to learn the semantic features of the opcode, and introduce the MPNN to extract control flow features from the CFG.
   
@@ -26,7 +26,7 @@ We use a recently-released, large-scale dataset [Qian et al., 2023](https://dl.a
 
 Further instructions on the dataset can be found on [Smart-Contract-Dataset](https://github.com/Messi-Q/Smart-Contract-Dataset), which is constantly being updated to provide more details.
 
-Following their labeling approach, we expand on two common and serious vulnerabilities: block number dependency (BN) and unchecked external call (UC). In total, 680, 2,242, 1,368, 136, 526, and 920 smart contracts have RE, TD, OF, DE, BN, and UC vulnerabilities, respectively.
+Following their labeling approach, we expand on two common and severe vulnerabilities: block number dependency (BN) and unchecked external call (UC). In total, 680, 2,242, 1,368, 136, 526, and 920 smart contracts have RE, TD, OF, DE, BN, and UC vulnerabilities, respectively.
 
 
 # Required Packages
@@ -38,4 +38,4 @@ Following their labeling approach, we expand on two common and serious vulnerabi
 
 
 # Running
-To run program, please use this command: python main_run.py
+To run the program, please use this command: python main_run.py
