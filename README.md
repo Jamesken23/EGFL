@@ -4,10 +4,15 @@ This repo is a paper of python implementation : Utilizing bytecode-based multi-m
 Our main intuition is that the opcode (a sequence modality of bytecode) and control flow graph (a graph modality of bytecode) can complement each other in vulnerability detection in smart contracts. To fill the research gap, we propose the SGVD framework that extracts rich semantic information from the opcode and control flow graph, aiming to improve the performance of vulnerability detection.
 
 # Framework
+<div align=center>
+<img src="https://github.com/Jamesken23/SGVD/blob/main/figs/bytecode_opcode_cfg.tiff" width="800" height="200" alt="Figure 1"/><br/>
+</div>
 
-![image](figs/SGVD.pdf)
+<div align=center>
+<img src="https://github.com/Jamesken23/SGVD/blob/main/figs/SGVD.tiff" width="800" height="260" alt="Figure 2"/><br/>
+</div>
 
-As shown in this figure, we provide an overview of the SGVD approach, which comprises the three stages:
+As shown in these figures, we provide an overview of the SGVD approach, which comprises the three stages:
 
   * **Data processing:** We collect the smart contract bytecode from the Ethereum platform. The automated tools are then applied to generate the opcode and CFG, respectively.
   
