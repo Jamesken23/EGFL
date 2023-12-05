@@ -1,7 +1,5 @@
-# SGVD
-This repo is a paper on Python implementation: **Utilizing bytecode-based multi-modality fusion framework to improve smart contract vulnerability detection.** 
-
-Our main intuition is that the opcode (a sequence modality of bytecode) and control flow graph (a graph modality of bytecode) can complement each other in vulnerability detection in smart contracts. To fill the research gap, we propose the SGVD framework that extracts rich semantic information from the opcode and control flow graph, aiming to improve the performance of vulnerability detection.
+# EGFL
+This repo is a paper on Python implementation: **Vulnerability detection in smart contracts via enhanced graph feature learning.** 
 
 # Required Packages
 > - Python 3.7+
