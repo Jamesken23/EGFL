@@ -1,5 +1,5 @@
 # EGFL
-This repo is a paper on Python implementation: **Vulnerability detection in smart contracts via enhanced graph feature learning.** 
+This repo is a paper on Python implementation: **Vulnerability detection in smart contracts via enhanced graph feature learning.** More detail will be revealed after the paper is accepted.
 
 # Required Packages
 > - Python 3.7+
