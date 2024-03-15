@@ -14,5 +14,5 @@ Further instructions on the dataset can be found on [Smart-Contract-Dataset](htt
 > - tensorflow 1.15.0
 
 
-# Running
-To run the program, please use this command: python main_run.py
+# Tools
+We use a public tool [evm_cfg_builder](https://github.com/crytic/evm_cfg_builder) to transform a smart contract bytecode into the corresponding control flow graph.
