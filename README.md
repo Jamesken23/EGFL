@@ -1,5 +1,5 @@
 # EGFL
-This repo is a paper on Python implementation: **A vulnerability detection framework with enhanced graph feature learning**
+This repo is a paper on Python implementation: **A vulnerability detection framework with enhanced graph feature learning**. This paper designs a new deep learning-based framework, named EGFL, that aims to utilize the enhanced graph learning technique to improve the performance of detecting software vulnerabilities (i.e., smart contract vulnerabilities).
 
 # Datasets
 We use a recently-released and large-scale dataset [Qian et al., 2023](https://dl.acm.org/doi/10.1145/3543507.3583367) as our benchmark, which mainly covers six categories of vulnerabilities: reentrancy (RE), timestamp dependence (TD), integer overflow/underflow (OF), delegatecall (DE), block number dependency (BN) and unchecked external call (UC). The benchmark dataset comprises 42,910 real-world smart contracts collected from the Ethereum platform [Thomas et al., 2020](https://ieeexplore.ieee.org/document/9284023), and was created using rigorous data collection and labeling strategies. 
