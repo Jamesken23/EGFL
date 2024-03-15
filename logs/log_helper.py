@@ -1,10 +1,9 @@
 import logging, time, os
 
 def get_log_path(args):
-    # 创建日志文件
     if not os.path.exists(args.log_dir):
         os.mkdir(args.log_dir)
-    # 获取当前时间作为日志文件名称
+    
     current_time=time.strftime('%Y%m%d%H%M',time.localtime(time.time() )) 
     
     log_txt_name = args.model_name + "_" + args.sc_vul_type + "_" + current_time +".txt"
