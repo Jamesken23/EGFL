@@ -14,18 +14,16 @@ Further instructions on the dataset can be found on [Smart-Contract-Dataset](htt
 > - tensorflow 1.15.0
 
 
-# The construction tools of bytecode CFG
+# The construction tools
 We use a public tool [BinaryCFGExtractor](https://github.com/Messi-Q/BinaryCFGExtractor) to compile a smart contract bytecode into the opcode and corresponding control flow graph (CFG). This compilation tool is mentioned in the paper [Cross-modality mutual learning
 for enhancing smart contract vulnerability detection on bytecode](https://dl.acm.org/doi/10.1145/3543507.3583367) and we provide the source code for this tool.
 
 To construct a CFG of bytecode, you also can use the public tool [evm_cfg_builder](https://github.com/crytic/evm_cfg_builder).
 
-We generally use various graph neural networks to handle the CFG and learn the graph features. To learn the graph features of the bytecode CFG, we primainly adopt the GCN model, and refer to some related Github works, such as [GraphExtractor](https://github.com/Messi-Q/SourceGraphExtractor) and [AME](https://github.com/Messi-Q/AMEVulDetector).
+We generally use various graph neural networks to handle the CFG and learn the graph features. To learn the graph features of the bytecode CFG, we primarily adopt the GCN model, and refer to some related Github works, such as [GraphExtractor](https://github.com/Messi-Q/SourceGraphExtractor) and [AME](https://github.com/Messi-Q/AMEVulDetector).
 
 
-# The construction tools from Solidity source code to Ethereum bytecode
-If you do not collect enough Ethereum bytecode as your training dataset, you can use the [Solidity compiler](https://github.com/ethereum/solidity/releases) to compile the Solidity source code into Ethereum bytecode. Besides, you can aslo use the [Bytecode to Opcode Disassembler](https://etherscan.io/opcode-tool) to convert the bytecode into the opcode.
+# The compilation tools
+If you do not collect enough Ethereum bytecode as your training dataset, you can use the [Solidity compiler](https://github.com/ethereum/solidity/releases) to compile the Solidity source code into Ethereum bytecode. Besides, you can also use the [Bytecode to Opcode Disassembler](https://etherscan.io/opcode-tool) to convert the bytecode into the opcode.
 
 As a supplement, you can employ an online Solidity Compiler [remix](https://remix.ethereum.org/) to compile the Solidity source code into Ethereum bytecode.
-
-We will continue to add and update more details on this work.
