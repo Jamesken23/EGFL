@@ -27,3 +27,14 @@ We generally use various graph neural networks to handle the CFG and learn the g
 If you do not collect enough Ethereum bytecode as your training dataset, you can use the [Solidity compiler](https://github.com/ethereum/solidity/releases) to compile the Solidity source code into Ethereum bytecode. Besides, you can also use the [Bytecode to Opcode Disassembler](https://etherscan.io/opcode-tool) to convert the bytecode into the opcode.
 
 As a supplement, you can employ an online Solidity Compiler [remix](https://remix.ethereum.org/) to compile the Solidity source code into Ethereum bytecode.
+
+# Reference
+This work has been accepted by the Journal of Systems and Software (JSS). You can cite this paper by:
+> @article{cheng2024vulnerability,  
+>  &nbsp; &nbsp; &nbsp; title={A vulnerability detection framework with enhanced graph feature learning},  
+>  &nbsp; &nbsp; &nbsp; author={Cheng, Jianxin and Chen, Yizhou and Cao, Yongzhi and Wang, Hanpin},  
+>  &nbsp; &nbsp; &nbsp; journal={Journal of Systems and Software},  
+>  &nbsp; &nbsp; &nbsp; pages={112118},  
+>  &nbsp; &nbsp; &nbsp; year={2024},  
+>  &nbsp; &nbsp; &nbsp; publisher={Elsevier}  
+> }
